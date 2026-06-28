@@ -1,0 +1,25 @@
+# ─── Mid-Atlantic Hosting-Capacity tool — GitHub Pages deploy filter ───
+# The LIVE SITE is only: index.html + midatlantic_territories.js + baked/ (minus the files below).
+# Everything excluded here stays on your machine (re-bake sources, scripts, internal notes) and is NOT published.
+
+# bake scripts, notebooks, infra & internal notes (no secrets, but not part of the public site)
+*.py
+*.ipynb
+*.toml
+*.md
+footprint-proxy.worker.js
+poted_proxy_lines.js
+
+# large baked files the page NEVER fetches at runtime — re-bake sources only (keep local)
+baked/bge_storage_fine.geojson
+baked/bge_storage_mid.geojson
+baked/peco_minor_pa.geojson
+baked/jcpl_load_nj.geojson
+baked/jcpl_pv_nj.geojson
+baked/pseg_load_nj.geojson
+baked/pseg_pv_nj.geojson
+baked/phi_load_md.geojson
+
+# OS cruft
+.DS_Store
+Thumbs.db
